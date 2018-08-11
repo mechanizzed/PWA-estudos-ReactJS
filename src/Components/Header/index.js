@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Container } from 'reactstrap';
 import './styles.css';
 
 class Header extends Component {
@@ -11,13 +11,20 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="Container">
-        <input
-          placeholder="Add GitHub Repository"
-          onChange={e => this.setState({ inputRepository: e.target.value })}
-          value={this.state.inputRepository}
-        />
-        <button onClick={this.addRepository}>Add</button>
+      <div className="BgHeader">
+        <Container>
+          <div className="Container-Header">
+            <input
+              className="InputHeader"
+              placeholder="Add GitHub Repository"
+              onChange={e => this.setState({ inputRepository: e.target.value })}
+              value={this.state.inputRepository}
+            />
+            <button className="ButtonHeader" onClick={this.addRepository}>
+              Add
+            </button>
+          </div>
+        </Container>
       </div>
     );
   }

@@ -1,17 +1,18 @@
-.Container {
+.BgHeader {
   width: 100%;
   background-color: #b5bec9;
+}
+.Container-Header {
+  width: 100%;
   font-size: 18px;
   color: #fff;
   font-weight: 600;
   display: flex;
   align-items: center;
   padding: 25px;
-  position: fixed;
-  left: 0;
-  top: 0;
+  justify-content: center;
 }
-.Container > input {
+.Container-Header input.InputHeader {
   flex: 1;
   border: 0;
   background-color: #fff;
@@ -21,7 +22,7 @@
   padding: 0 15px;
 }
 
-.Container > button {
+.Container-Header button.ButtonHeader {
   border: 0;
   background-color: #6b7d94;
   color: #fff;

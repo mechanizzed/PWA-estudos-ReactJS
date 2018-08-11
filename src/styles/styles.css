@@ -10,3 +10,8 @@ body {
   -webkit-font-smoothing: antialiased !important;
   background-color: #e6e9ed;
 }
+
+.Container-All {
+  width: 70%;
+  overflow: hidden;
+}
