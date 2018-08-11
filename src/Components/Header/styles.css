@@ -1,6 +1,8 @@
 .BgHeader {
   width: 100%;
   background-color: #b5bec9;
+  overflow: hidden;
+  position: fixed;
 }
 .Container-Header {
   width: 100%;
