@@ -3,6 +3,7 @@
   background-color: #b5bec9;
   overflow: hidden;
   position: fixed;
+  top: 0;
 }
 .Container-Header {
   width: 100%;

@@ -8,10 +8,9 @@
 body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  background-color: #e6e9ed;
+  background-color: #e6e9ed !important;
 }
 
-.Container-All {
-  width: 70%;
-  overflow: hidden;
+.Container-Main {
+  margin-top: 100px;
 }

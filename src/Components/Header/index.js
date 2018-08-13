@@ -3,12 +3,6 @@ import { Container } from 'reactstrap';
 import './styles.css';
 
 class Header extends Component {
-  state = {
-    inputRepository: ''
-  };
-
-  addRepository = () => {};
-
   render() {
     return (
       <div className="BgHeader">
@@ -17,10 +11,10 @@ class Header extends Component {
             <input
               className="InputHeader"
               placeholder="Add GitHub Repository"
-              onChange={e => this.setState({ inputRepository: e.target.value })}
-              value={this.state.inputRepository}
+              onChange={this.props.onChange}
+              value={this.props.inputRepository}
             />
-            <button className="ButtonHeader" onClick={this.addRepository}>
+            <button className="ButtonHeader" onClick={this.props.addRepository}>
               Add
             </button>
           </div>
